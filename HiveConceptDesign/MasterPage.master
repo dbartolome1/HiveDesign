@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" href="Content/bootstrap.css" />
+    <asp:ContentPlaceHolder  id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>  
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container-fluid">
+            <div class="row content">
+                <div class="col-sm-3 sidenav">
+                    <h4>Hive Design Concept</h4>
+                        <ul class="nav">
+                            <li><a href="GetAppointment.aspx">Get Appointment</a></li>
+                            <li><a href="BookAppointment.aspx">Book Appointments</a></li>
+                            <li><a href="ModifyAppointments.aspx">Modify Appointments</a></li>
+                            <li><a href="GetEvents.aspx">Get Events</a></li>
+                            <li><a href="ViewEventList.aspx">View Event List</a></li>
+                            <li><a href="AssignEvents.aspx">Assign Events</a></li>
+                            <li><a href="RemoveEvents.aspx">Remove Events</a></li>
+                            <li><a href="CreateEvents.aspx">Create Events</a></li>
+                            <li><a href="ModifyEvents.aspx">Modify Events</a></li>
+                                
+                        </ul>
+                        </div>
+           
+                <div class="col-sm-9">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+         </div>
+     </div>
+    <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer>
+    </form>
+</body>  
+</html>
